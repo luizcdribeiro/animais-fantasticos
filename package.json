@@ -1,5 +1,5 @@
 {
-  "name": "projeto-starwars",
+  "name": "Projeto-final-animais-fantasticos",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -20,7 +20,5 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
-  },
-  "author": "",
-  "description": ""
+  }
 }
