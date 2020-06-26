@@ -3,12 +3,12 @@ import ScrollSuave from './modules/init-scroll-suave.js';
 import TabNav from './modules/init-tab.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
-import AnimaNumeros from './modules/anima-numeros.js';
 import iniciaAnimaScroll from './modules/init-anima-scroll.js';
 import iniciaDropdownMenu from './modules/dropdown.js';
 import iniciaMenuMobile from './modules/menu-mobile.js';
 import iniciaFuncionamento from './modules/funcionamento.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
+import fetchAnimais from './modules/fetch-animais';
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -25,11 +25,9 @@ modal.init();
 const toolTip = new Tooltip('[data-tooltip]');
 toolTip.init();
 
-const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros');
-animaNumeros.init();
-
 iniciaAnimaScroll();
 iniciaDropdownMenu();
 iniciaMenuMobile();
 iniciaFuncionamento();
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
 fetchBitcoin();
