@@ -3,7 +3,7 @@ import ScrollSuave from './modules/init-scroll-suave.js';
 import TabNav from './modules/init-tab.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
-import iniciaAnimaScroll from './modules/init-anima-scroll.js';
+import AnimaScroll from './modules/init-anima-scroll.js';
 import iniciaDropdownMenu from './modules/dropdown.js';
 import iniciaMenuMobile from './modules/menu-mobile.js';
 import iniciaFuncionamento from './modules/funcionamento.js';
@@ -25,7 +25,8 @@ modal.init();
 const toolTip = new Tooltip('[data-tooltip]');
 toolTip.init();
 
-iniciaAnimaScroll();
+const animaScroll = new AnimaScroll('[data-anime="scroll"]');
+animaScroll.initScroll();
 iniciaDropdownMenu();
 iniciaMenuMobile();
 iniciaFuncionamento();
