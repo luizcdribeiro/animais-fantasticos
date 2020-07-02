@@ -4,7 +4,7 @@ import TabNav from './modules/init-tab.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import AnimaScroll from './modules/init-anima-scroll.js';
-import iniciaDropdownMenu from './modules/dropdown.js';
+import DropdownMenu from './modules/dropdown.js';
 import iniciaMenuMobile from './modules/menu-mobile.js';
 import iniciaFuncionamento from './modules/funcionamento.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
@@ -27,7 +27,10 @@ toolTip.init();
 
 const animaScroll = new AnimaScroll('[data-anime="scroll"]');
 animaScroll.initScroll();
-iniciaDropdownMenu();
+
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
+
 iniciaMenuMobile();
 iniciaFuncionamento();
 fetchAnimais('../../animaisapi.json', '.numeros-grid');
