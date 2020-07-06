@@ -12,6 +12,12 @@
   animation: show-up .3s forwards;
 }
 
+@media screen and (max-width: 700px) {
+  [data-dropdown] .dropdown-menu{
+    display: block;
+    animation: show-up .3s forwards;
+  }
+}
 
 @keyframes show-up {
   from {
